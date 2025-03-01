@@ -1,11 +1,27 @@
 @import "tailwindcss";
 
+/* Import fonts */
+/* @import '@fontsource/merriweather/400.css';
+@import '@fontsource/merriweather/700.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/600.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css'; */
+
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 :root {
+  --deep-blue: #003366;
+  --rich-red: #D71920;
+  --dark-grey: #4A4A4A;
+  --off-white: #F9F9F9;
+  --gold-accent: #D4AF37;
+  --light-grey: #D1D1D1;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,7 +34,25 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark-grey);
+  background: var(--off-white);
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', serif;
+}
+
+/* Explicit class for the announcement bar background */
+.bg-deep-blue {
+  background-color: #003366 !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

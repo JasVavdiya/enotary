@@ -2,100 +2,57 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="container mx-auto px-1 py-8">
+        <h1 className="text-3xl font-merriweather font-bold text-deep-blue mb-4">
+          Welcome to eNotary
+        </h1>
+        <p className="text-base font-lato mb-6">
+          Secure, legally compliant digital notarization services for individuals and businesses.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div className="bg-white p-3 rounded-lg shadow-md">
+            <h2 className="text-xl font-merriweather text-deep-blue mb-3">For Individuals</h2>
+            <p className="font-lato mb-3 text-sm">
+              Get your documents notarized quickly and securely from the comfort of your home.
+            </p>
+            <a 
+              href="/need-enotary" 
+              className="inline-block bg-rich-red text-white px-2 py-1 rounded-md font-montserrat hover:bg-opacity-90 transition-colors text-sm"
+            >
+              Get Started
+            </a>
+          </div>
+          
+          <div className="bg-white p-3 rounded-lg shadow-md">
+            <h2 className="text-xl font-merriweather text-deep-blue mb-3">For Businesses</h2>
+            <p className="font-lato mb-3 text-sm">
+              Streamline your document workflows with our enterprise eNotary solutions.
+            </p>
+            <a 
+              href="/business-solutions" 
+              className="inline-block bg-deep-blue text-white px-2 py-1 rounded-md font-montserrat hover:bg-opacity-90 transition-colors text-sm"
+            >
+              Learn More
+            </a>
+          </div>
+          
+          <div className="bg-white p-3 rounded-lg shadow-md">
+            <h2 className="text-xl font-merriweather text-deep-blue mb-3">Become a Provider</h2>
+            <p className="font-lato mb-3 text-sm">
+              Join our network of certified eNotary providers and grow your business.
+            </p>
+            <a 
+              href="/become-provider" 
+              className="inline-block border border-deep-blue text-deep-blue px-2 py-1 rounded-md font-montserrat hover:bg-deep-blue hover:text-white transition-colors text-sm"
+            >
+              Apply Now
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }
