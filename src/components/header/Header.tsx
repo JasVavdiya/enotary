@@ -216,7 +216,7 @@ const Header = () => {
         onMouseEnter={() => handleMouseEnter(activeMenu || '')}
         onMouseLeave={handleMouseLeave}
       >
-        <MegaMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+        <MegaMenu activeMenu={activeMenu} />
       </div>
 
       {/* Mobile Menu */}

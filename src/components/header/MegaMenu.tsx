@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { menuItems, MenuItemProps, RegisterMenuItemProps } from './menuData';
@@ -8,10 +7,9 @@ import { FaUserTie, FaSearch } from 'react-icons/fa';
 
 type MegaMenuProps = {
   activeMenu: string | null;
-  setActiveMenu: (menu: string | null) => void;
 };
 
-const MegaMenu = ({ activeMenu, setActiveMenu }: MegaMenuProps) => {
+const MegaMenu = ({ activeMenu }: MegaMenuProps) => {
   if (!activeMenu || !menuItems[activeMenu]) return null;
 
   const menuItem = menuItems[activeMenu];
@@ -64,7 +62,7 @@ const MegaMenu = ({ activeMenu, setActiveMenu }: MegaMenuProps) => {
 
   // For other menu types
   const standardMenu = menuItem as MenuItemProps;
-  const { title, items } = standardMenu;
+  const { items } = standardMenu;
 
   return (
     <AnimatePresence>

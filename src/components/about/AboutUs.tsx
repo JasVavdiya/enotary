@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -20,7 +20,7 @@ const defaultAboutContent = {
 
 const AboutUs = () => {
   // In a real application, this would be fetched from an API
-  const [content, setContent] = useState(defaultAboutContent);
+  const content = defaultAboutContent;
   
   // Animation variants
   const containerVariants = {

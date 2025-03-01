@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -28,7 +28,7 @@ const defaultVisionContent = {
 
 const Vision = () => {
   // In a real application, this would be fetched from an API
-  const [content, setContent] = useState(defaultVisionContent);
+  const content = defaultVisionContent;
   
   // Animation variants
   const containerVariants = {

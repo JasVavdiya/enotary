@@ -55,7 +55,7 @@ const defaultGalleryContent = {
 
 const Gallery = () => {
   // In a real application, this would be fetched from an API
-  const [content, setContent] = useState(defaultGalleryContent);
+  const content = defaultGalleryContent;
   const [activeCategory, setActiveCategory] = useState("All");
   const [filteredImages, setFilteredImages] = useState(content.images);
   const [currentSlide, setCurrentSlide] = useState(0);

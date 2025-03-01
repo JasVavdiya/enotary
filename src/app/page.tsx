@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { AboutUs } from "@/components/about";
 import { Vision } from "@/components/vision";
 import { BharatGlobal } from "@/components/bharatGlobal";

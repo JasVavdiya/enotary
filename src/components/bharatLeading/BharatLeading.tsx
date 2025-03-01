@@ -10,7 +10,7 @@ const BharatLeading = () => {
             BHARAT LEADING
           </h2>
           <p className="text-[#153163] max-w-2xl mx-auto">
-            India's premier e-notarization platform connecting citizens, businesses, and government institutions
+            India&apos;s premier e-notarization platform connecting citizens, businesses, and government institutions
             with secure digital document services.
           </p>
         </div>

@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FaCalendarAlt, FaHandshake, FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
 
 const AnnouncementBar = () => {
   // Remove the state for mobile announcement bar

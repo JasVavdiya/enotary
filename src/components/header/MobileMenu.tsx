@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaCalendarAlt, FaHandshake, FaChevronDown, FaPhone, FaQuestionCircle, FaFileAlt, FaSignInAlt, FaTimes, FaHome, FaInfoCircle, FaUserPlus, FaUserTie, FaSearch } from 'react-icons/fa';
+import { FaCalendarAlt, FaHandshake, FaChevronDown, FaQuestionCircle, FaFileAlt, FaTimes, FaInfoCircle, FaUserPlus, FaUserTie, FaSearch } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import the menu items from MegaMenu

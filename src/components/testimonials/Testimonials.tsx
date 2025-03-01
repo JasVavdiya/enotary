@@ -46,7 +46,7 @@ const defaultTestimonialsContent = {
 
 const Testimonials = () => {
   // In a real application, this would be fetched from an API
-  const [content, setContent] = useState(defaultTestimonialsContent);
+  const content = defaultTestimonialsContent;
   const [activeIndex, setActiveIndex] = useState(0);
   const [autoplay, setAutoplay] = useState(true);
   
@@ -223,7 +223,7 @@ const Testimonials = () => {
                 
                 {/* Quote */}
                 <blockquote className="text-xl md:text-2xl text-dark-grey text-center italic mb-8 leading-relaxed">
-                  "{content.testimonials[activeIndex].quote}"
+                  &ldquo;{content.testimonials[activeIndex].quote}&rdquo;
                 </blockquote>
                 
                 {/* Author */}
